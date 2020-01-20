@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         LIHKG imgur viewer
-// @namespace    https://github.com/abcde
+// @namespace    https://github.com/jomut9/lihkg-imgur-viewer/
 // @version      0.1
 // @description  View media hosted on imgur
 // @author       jomut9
 // @include      *://lihkg.com/thread/*
 // @grant        GM_xmlhttpRequest
 // @run-at       document-idle
+// @updateURL    https://github.com/jomut9/lihkg-imgur-viewer/raw/master/lihkg-imgur-viewer.user.js
+// @downloadURL  https://github.com/jomut9/lihkg-imgur-viewer/raw/master/lihkg-imgur-viewer.user.js
 // ==/UserScript==
 
 (function (){
