@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LIHKG imgur viewer
 // @namespace    https://github.com/jomut9/lihkg-imgur-viewer/
-// @version      0.1
+// @version      0.1.1
 // @description  View media hosted on imgur
 // @author       jomut9
 // @include      *://lihkg.com/thread/*
@@ -22,7 +22,7 @@
                             for (const el of els){
                                 var split = el.getAttribute('href').split('/');
                                 var bq = document.createElement("blockquote");
-                                var dataid = split[3] + "/" + split[4];
+                                var dataid = (split[3] == 'gallery' ? split[4]: split[3] + "/" + split[4]);
                                 bq.className = "imgur-embed-pub";
                                 bq.lang = 'en';
                                 bq.dataset.id = dataid;
