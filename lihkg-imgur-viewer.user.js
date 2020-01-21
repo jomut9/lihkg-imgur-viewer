@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LIHKG imgur viewer
 // @namespace    https://github.com/jomut9/lihkg-imgur-viewer/
-// @version      0.1.1
+// @version      0.1.2
 // @description  View media hosted on imgur
 // @author       jomut9
 // @include      *://lihkg.com/thread/*
@@ -44,3 +44,4 @@
         }
     });
     observer.observe(document.body, { childList: true, subtree: true });
+})();
